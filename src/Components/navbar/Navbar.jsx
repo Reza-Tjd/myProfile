@@ -35,10 +35,10 @@ export default function Navbar() {
         <Link to="/experience" className="language-btn" onClick={toggleMenu}>
           Experiences
         </Link>
-        <button className="language-btn"> EN / DE</button>
+        {/* <button className="language-btn"> EN / DE</button>
         <button className="theme-btn">
           <BedtimeIcon /> / <LightModeIcon />
-        </button>
+        </button> */}
       </div>
     </nav>
   );

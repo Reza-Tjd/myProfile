@@ -118,7 +118,7 @@ export default function Body() {
               </div>
             </div>
             <h5 className="socialMedia">Social Media</h5>
-            <Link
+            {/* <Link
               to={{ pathname: "https://www.linkedin.com/in/reza-tajadod/" }}
               target="_blank"
               rel="noopener noreferrer"
@@ -127,7 +127,18 @@ export default function Body() {
                 className="linkdin"
                 style={{ width: 50, height: 50 }}
               />
-            </Link>
+            </Link> */}
+
+            <a
+              href="https://www.linkedin.com/in/reza-tajadod/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <LinkedInIcon
+                className="linkdin"
+                style={{ width: 50, height: 50 }}
+              />
+            </a>
 
             <h5 className="languageTitle">Languages</h5>
             <div className="languages">
@@ -415,9 +426,9 @@ export default function Body() {
         </div>
         <nav className="mobile-nav">
           <ul>
-          <li onClick={scrollToAboutMe}>About</li>
-          <li onClick={scrollToMySkill}>Skills</li>
-          <li onClick={scrollToMyProjects}>Projects</li>
+            <li onClick={scrollToAboutMe}>About</li>
+            <li onClick={scrollToMySkill}>Skills</li>
+            <li onClick={scrollToMyProjects}>Projects</li>
           </ul>
         </nav>
         {showUpButton && (
